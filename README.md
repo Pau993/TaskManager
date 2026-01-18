@@ -1,13 +1,11 @@
 # TASK MANAGER
 
-En este taller se realizó la contrucción de un servidor Web, tipo apache en java, el cual es capaz de entregar páginas HTML e imagenes tipo PNG.
+En esta prueba se realizó la contrucción de un servidor Web
 
 
 ## Descripción de la aplicación 📖
 
-La aplicación es un microframework en Java que configura y ejecuta un servidor HTTP simple. Este microframework proporciona una forma sencilla de configurar y ejecutar un servidor HTTP con rutas básicas y soporte para archivos estáticos.
-
-La aplicación es ideal para comprender los fundamentos del desarrollo de frameworks web para servicios REST, permitiendo manejar parámetros de consulta, definir servicios REST y gestionar archivos estáticos.
+Gestión de Usuarios y Tareas es una aplicación web full-stack para administrar usuarios y sus tareas asociadas. Incluye backend API REST con documentación Swagger, frontend responsivo, base de datos PostgreSQL, y está completamente dockerizada.
 
 ## Diagrama de Arquitectura 📊
 
@@ -56,17 +54,20 @@ Las clases principales (Request, Response, HttpServer) manejan las solicitudes, 
 
 Las siguientes instrucciones le permitirán obtener una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo y prueba.
 
-### Tecnologías usadas ⚙️
-
-* [Maven](https://maven.apache.org/) : Gestor de dependencias y automatización de construcción para Java.
-* [JavaScript](https://nodejs.org/) : Lenguaje de programación para interactividad en la web.
-* [Java](https://www.java.com/es/) : Lenguaje de programación robusto para backend y aplicaciones empresariales.
-* [html](https://developer.mozilla.org/es/docs/Web/HTML) : Lenguaje de programación que define la estructura de las páginas web
-
-```
-* Versión Maven: 3.9.9
-* Versión Java: 21
-```
+### Tecnologías Utilizadas
+## Backend
+* NestJS 9: Framework Node.js con TypeScript
+* TypeORM: ORM para gestión de base de datos
+* PostgreSQL: Base de datos relacional
+* Swagger: Documentación interactiva de API
+* Jest: Testing unitario
+## Frontend
+* HTML5 / CSS3 / JavaScript: Interfaz responsiva
+* Tablas profesionales: Visualización de datos
+API REST: Comunicación con el backend
+## DevOps
+* Docker: Containerización de la aplicación
+* Docker Compose: Orquestación de servicios (App + PostgreSQL)
 
 ### Instalación 📦
 
@@ -84,14 +85,28 @@ mvn clean compile
 Para ejecutar la aplicación, ejecute el siguiente comando:
 
 ```
-mvn exec:java -Dexec.mainClass="com.example.HttpServer"
+# Instalación inicial
+npm install --legacy-peer-deps
+
+# Desarrollo (auto-reload)
+npm run start:dev
+
+# Producción
+npm run build
+npm run start
+
+# Con Docker
+docker-compose up --build
+
+# Tests
+npm run test
 
 ```
 El anterior comando limpiará las contrucciones previas, compilará y empaquetará el código en un jar y luego ejecutará la aplicación.
 
 ## Ver la Aplicación: 💿
 
-Diríjase a http://localhost:35000/ en su navegador para ver la aplicación en funcionamiento
+Diríjase a http://localhost:3000/ en su navegador para ver la aplicación en funcionamiento
 
 ## Ejecutando las pruebas ⚙️
 
@@ -104,32 +119,18 @@ mvn test
 ```
 ![image](https://github.com/user-attachments/assets/acc5fdc4-897f-492d-96b2-7de303b742da)
 
-## Descripción de las pruebas ✏️
+## Tests Unitarios ✏️
 
-* testHandleApiRequestSaludo 🛠️
+Implementados con Jest:
 
-Verifica que la solicitud a la ruta /api/saludo responde con HTTP 200 OK y contiene el mensaje JSON esperado.
-* testHandleApiRequestFecha 📅
+✅ users.service.spec.ts: 3 casos de prueba
+✅ users.controller.spec.ts: 3 casos de prueba
 
-Valida que la solicitud a /api/fecha devuelve HTTP 200 OK y contiene una clave "fecha" en la respuesta.
-* testHandleApiRequestNotFound ❌
-
-Comprueba que una ruta inexistente, como /api/desconocido, devuelve HTTP 404 Not Found.
-* testHandleApiPostRequest 📤
-
-Evalúa que una solicitud POST a /api/enviar con un cuerpo JSON sea procesada correctamente y responda con HTTP 200 OK y el mensaje
-
-* testHandleApiRequestHello ✏️
-
-Esta prueba verifica que el servidor HTTP maneje correctamente una solicitud a la ruta "/api/hello".
-
-* testHandleApiRequestPi ✏️
-
-Esta prueba verifica que la solicitud al método greeting del controlador GreetingController con un parámetro name devuelve un saludo personalizado.
-
-* testHandleApiRequestGreeting ✏️
-
-Estas pruebas aseguran que los métodos del controlador GreetingController están devolviendo las respuestas correctas cuando se les pasa un parámetro específico.
+```
+npm run test          # Ejecutar tests
+npm run test:watch   # Modo watch
+npm run test:cov     # Con cobertura
+```
 
 ## Características principales: ⚙️
 
@@ -147,11 +148,10 @@ Estas pruebas aseguran que los métodos del controlador GreetingController está
 * Archivos JavaScript (script.js).
 * Hojas de estilo CSS (estilos.css).
 * Documentos HTML (index.html).
-* Imágenes (Chill.jpg).
 
 # Muestra de la aplicación 🧩
 
-https://github.com/user-attachments/assets/228f71e7-3696-413b-8d8a-b19b412c0104
+https://github.com/user-attachments/assets/e10ee1d8-7a61-4e27-8904-e05577a7b7a7
 
 ## Autores ✒️
 
