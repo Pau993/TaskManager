@@ -62,8 +62,8 @@ Diríjase a http://localhost:3000/ en su navegador para ver la aplicación en fu
 
 Implementados con Jest:
 
-✅ users.service.spec.ts: 3 casos de prueba
-✅ users.controller.spec.ts: 3 casos de prueba
+✅ users.service.spec.ts: 4 casos de prueba
+✅ users.controller.spec.ts: 4 casos de prueba
 
 ```
 npm run test          # Ejecutar tests
