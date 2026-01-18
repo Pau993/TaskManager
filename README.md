@@ -27,10 +27,9 @@ API REST: Comunicación con el backend
 Realice los siguientes pasos para clonar el proyecto en su máquina local.
 
 ```
-git clone https://github.com/Pau993/Taller03.git
-cd Taller03
-git checkout Taller03
-mvn clean compile
+git clone https://github.com/Pau993/TaskManager.git
+cd TaskManager
+git checkout TaskManager
 ```
 
 ### Ejecutando la aplicación ⚙️
