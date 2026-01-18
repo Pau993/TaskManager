@@ -1,6 +1,6 @@
 # TASK MANAGER
 
-En esta prueba se realizó la contrucción de un servidor Web
+En esta prueba técnica se realizó la contrucción de un servidor Web
 
 
 ## Descripción de la aplicación 📖
