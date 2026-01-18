@@ -29,6 +29,8 @@ Realice los siguientes pasos para clonar el proyecto en su máquina local.
 git clone https://github.com/Pau993/TaskManager.git
 cd TaskManager
 git checkout TaskManager
+# Instalación inicial
+npm install --legacy-peer-deps
 ```
 
 ### Ejecutando la aplicación 
@@ -36,9 +38,6 @@ git checkout TaskManager
 Para ejecutar la aplicación, ejecute el siguiente comando:
 
 ```
-# Instalación inicial
-npm install --legacy-peer-deps
-
 # Desarrollo (auto-reload)
 npm run start:dev
 
