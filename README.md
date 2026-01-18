@@ -62,7 +62,7 @@ Diríjase a http://localhost:3000/ en su navegador para ver la aplicación en fu
 
 ## Ejecutando las pruebas ⚙️
 
-<img width="883" height="262" alt="Captura de pantalla 2026-01-17 222534" src="https://github.com/user-attachments/assets/2f89991c-300b-41ae-810e-9bb73ed6ba4a" />
+<img width="398" height="212" alt="image" src="https://github.com/user-attachments/assets/dbed9a58-b169-4fb9-b059-caeb8dede863" />
 
 ## Tests Unitarios ✏️
 
