@@ -77,8 +77,6 @@ npm run test:cov     # Con cobertura
 
 * Diseño minimalista con un esquema de colores sofisticado.
 * Adaptable a diferentes dispositivos gracias a su diseño responsivo.
-* Gestión de Archivos:
-* Botones interactivos para abrir y visualizar archivos clave como JavaScript, CSS, HTML e imágenes.
 
 2. Gestión de archivos: 
 
