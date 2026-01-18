@@ -7,65 +7,18 @@ En esta prueba se realizó la contrucción de un servidor Web
 
 Gestión de Usuarios y Tareas es una aplicación web full-stack para administrar usuarios y sus tareas asociadas. Incluye backend API REST con documentación Swagger, frontend responsivo, base de datos PostgreSQL, y está completamente dockerizada.
 
-## Diagrama de Arquitectura 📊
-
-Este diagrama representa la arquitectura de un servidor HTTP desarrollado en Java sin frameworks web. A continuación, te explico los principales componentes y su interacción:
-
-* Usuario (User): Representa al cliente que accede a los recursos del servidor a través de un navegador web.
-
-* Navegador (Browser): Solicita diferentes recursos al servidor HTTP. Estas solicitudes incluyen:
-
-Archivos estáticos como index.html, script.js, estilos.css e imágenes (Imagen/Chill.jpg).
-Endpoints dinámicos como /pi y /greeting.
-Servidor HTTP (HttpServer): Maneja las solicitudes entrantes y sirve los recursos solicitados. Depende de un módulo llamado Utils, que posiblemente se encarga de procesar las solicitudes y gestionar las respuestas.
-
-Módulo Utils: Parece ser una capa intermedia que ayuda al HttpServer a procesar y responder a las solicitudes. Este módulo podría encargarse de:
-
-* Manejo de rutas.
-* Procesamiento de datos.
-* Conversión de respuestas.
-* Recursos: Representan servidores o bases de datos que el HttpServer consulta para obtener información y responder adecuadamente a las solicitudes.
-
-* Comunicación HTTP: Indica que el HttpServer interactúa con servicios externos a través de HTTP, posiblemente para obtener datos adicionales.
-
-* Flujo de trabajo:
-El usuario accede al navegador y solicita una URL (http://<Server>:35000/index.html).
-El navegador envía la petición al HttpServer.
-* HttpServer procesa la solicitud con ayuda del módulo Utils:
-Si es un archivo estático, lo busca y lo devuelve.
-Si es una solicitud dinámica (/pi o /greeting), podría consultar recursos externos antes de generar la respuesta.
-Si la solicitud requiere comunicación con otro servicio, HttpServer envía una petición HTTP a los Recursos y espera la respuesta.
-Finalmente, HttpServer devuelve el contenido solicitado al navegador.
-
-![image](https://github.com/user-attachments/assets/1c4560c7-ee88-4666-9ff4-5154bec0710d)
-
-Este diagrama describe un servidor HTTP básico capaz de manejar solicitudes de archivos estáticos y procesar peticiones dinámicas con ayuda de un módulo intermedio (Utils). Además, puede comunicarse con servicios externos para obtener información adicional.
-
-## Diagrama de Clase 📊
-
-Este diagrama de clases representa la arquitectura de un microframework para servicios REST, dividiendo la funcionalidad en varias clases e interfaces.
-
-Las clases principales (Request, Response, HttpServer) manejan las solicitudes, respuestas y la lógica del servidor, mientras que las interfaces (Route) definen cómo implementar rutas personalizadas.
-
-![image](https://github.com/user-attachments/assets/3416f27c-f056-4eaf-b48e-11aa1c23078c)
-
-
-## Comenzando 🚀
-
-Las siguientes instrucciones le permitirán obtener una copia del proyecto en funcionamiento en su máquina local para fines de desarrollo y prueba.
-
-### Tecnologías Utilizadas
-## Backend
+## Tecnologías Utilizadas
+### Backend
 * NestJS 9: Framework Node.js con TypeScript
 * TypeORM: ORM para gestión de base de datos
 * PostgreSQL: Base de datos relacional
 * Swagger: Documentación interactiva de API
 * Jest: Testing unitario
-## Frontend
+### Frontend
 * HTML5 / CSS3 / JavaScript: Interfaz responsiva
 * Tablas profesionales: Visualización de datos
 API REST: Comunicación con el backend
-## DevOps
+### DevOps
 * Docker: Containerización de la aplicación
 * Docker Compose: Orquestación de servicios (App + PostgreSQL)
 
