@@ -17,7 +17,6 @@ Gestión de Usuarios y Tareas es una aplicación web full-stack para administrar
 ### Frontend
 * HTML5 / CSS3 / JavaScript: Interfaz responsiva
 * Tablas visualización de datos
-* API REST: Comunicación con el backend
 ### DevOps
 * Docker: Containerización de la aplicación
 * Docker Compose: Orquestación de servicios (App + PostgreSQL)
