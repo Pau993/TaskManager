@@ -73,9 +73,8 @@ npm run test:cov     # Con cobertura
 
 ## Características principales: 
 
-1. Interfaz moderna y responsiva: 
+1. Interfaz moderna y responsiva:
 
-* Interfaz Moderna y Responsiva:
 * Diseño minimalista con un esquema de colores sofisticado.
 * Adaptable a diferentes dispositivos gracias a su diseño responsivo.
 * Gestión de Archivos:
