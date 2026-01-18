@@ -71,6 +71,15 @@ npm run test:watch   # Modo watch
 npm run test:cov     # Con cobertura
 ```
 
+## Swagger Doc
+
+Para ingresar a Swagger ingresar con:
+
+http://localhost:3000/api/docs
+
+<img width="1869" height="995" alt="image" src="https://github.com/user-attachments/assets/cee0fead-4053-4186-bcc8-df6d4cf5481e" />
+
+
 ## Características principales: 
 
 1. Interfaz moderna y responsiva:
