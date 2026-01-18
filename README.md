@@ -62,14 +62,7 @@ Diríjase a http://localhost:3000/ en su navegador para ver la aplicación en fu
 
 ## Ejecutando las pruebas ⚙️
 
-Para ejecutar las pruebas, ejecute el siguiente comando:
-
-Las pruebas realizadas en este proyecto se enfocan en la validación y verificación de requisitos relacionados con el proceso de gestión de solicitudes, asegurando su correcto funcionamiento y cumplimiento de especificaciones.
-
-```
-mvn test
-```
-![image](https://github.com/user-attachments/assets/acc5fdc4-897f-492d-96b2-7de303b742da)
+<img width="883" height="262" alt="Captura de pantalla 2026-01-17 222534" src="https://github.com/user-attachments/assets/2f89991c-300b-41ae-810e-9bb73ed6ba4a" />
 
 ## Tests Unitarios ✏️
 
