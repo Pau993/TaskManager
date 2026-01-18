@@ -47,9 +47,6 @@ npm run start
 # Con Docker
 docker-compose up --build
 
-# Tests
-npm run test
-
 ```
 El anterior comando limpiará las contrucciones previas, compilará y empaquetará el código en un jar y luego ejecutará la aplicación.
 
